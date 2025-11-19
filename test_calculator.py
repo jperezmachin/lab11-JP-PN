@@ -47,9 +47,9 @@ class TestCalculator(unittest.TestCase):
     def test_hypotenuse(self):
         self.assertEqual(calculator.hypotenuse(2,2), math.sqrt(8))
 
-    def test_square_root(self):
-        self.assertEqual(calculator.square_root(-4), "Square root inputs must be positive")
-        self.assertEqual(calculator.square_root(4), 2)
+    def test_sqrt(self):
+        self.assertEqual(calculator.sqrt(-4), "Square root inputs must be positive")
+        self.assertEqual(calculator.sqrt(4), 2)
 
 
 
