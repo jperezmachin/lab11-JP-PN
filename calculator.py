@@ -13,11 +13,14 @@ def mul(a, b):
     return a * b
 
 def div(a, b):
-    return a / b
+    try:
+        return a / b
+    except ZeroDivisionError:
+        return "Error: Division by zero"
 
 def logarithm(a, b):
     if a <= 0 or b <= 0:
-        raise ValueError("Logarithm inputs must be positive")
+        return "Logarithm inputs must be positive"
     return math.log(b, a)
 
 def exp(a, b):
@@ -25,7 +28,7 @@ def exp(a, b):
 
 def square_root(a):
     if a < 0:
-        raise ValueError("Square root inputs must be positive")
+        return "Square root inputs must be positive"
     return math.sqrt(a)
 
 def hypotenuse(a, b):
