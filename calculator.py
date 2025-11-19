@@ -30,7 +30,7 @@ def logarithm(a, b):
 def exp(a, b):
     return a**b
 
-def sqrt(a):
+def square_root(a):
     if a < 0:
         return "Square root inputs must be positive"
     return math.sqrt(a)
