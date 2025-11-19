@@ -17,22 +17,12 @@ def logarithm(a, b):
 def exponent(a, b):
     return a**b
 
-def sub(a, b): 
-    return a - b
+def square_root(a):
+    if a < 0:
+        raise ValueError("Square root inputs must be positive")
+    return math.sqrt(a)
 
-def mul(a, b): 
-    return a * b
+def hypotenuse(a, b):
+    return math.hypot(a, b)
 
-def div(a, b): # raise ZeroDivisionError if a == 0
-    if a == 0:
-        raise ZeroDivisionError
 
-    return b/a
-
-def log(a, b):# use math library + raise ValueError
-    if a <= 0 or b <= 0:
-        raise ValueError("Logarithm inputs must be positive.")
-    return math.log(b, a)  # log base a of b
-
-def exp(a, b):
-    return a ** b
