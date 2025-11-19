@@ -1,3 +1,6 @@
+#https://github.com/jperezmachin/lab11-JP-PN
+#Partner 1: Prisha Narne
+#Partner 2: Julio Perez
 import math
 
 def add(a, b):
