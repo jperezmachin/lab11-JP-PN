@@ -21,6 +21,7 @@ def div(a, b): # raise ZeroDivisionError if a == 0
         raise ZeroDivisionError
 
     return b/a
+
 def log(a, b):# use math library + raise ValueError
     if a <= 0 or b <= 0:
         raise ValueError("Logarithm inputs must be positive.")
